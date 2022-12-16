@@ -1,0 +1,190 @@
+html {
+	margin: 0;
+	padding: 0;
+}
+@font-face{
+	font-family: 'Beauty';
+	src: url(../FONTS/BeautyDemo.ttf), url(../FONTS/BeautyDemo.otf);
+}
+.texteheader {
+	font-family: 'Beauty';
+}
+
+main {
+	z-index: 2;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+header {
+	display: flex;
+	opacity: 0.8;
+	width: 50vw;
+	height: 50vh;
+}
+.hover1 p {
+	font-size: 60px;
+	margin-top: 0;
+}
+.hover2 p {
+	font-size: 60px;
+	margin-top: 0;
+}
+.flexdirection {
+	display: flex;
+	justify-content: space-evenly;
+}
+.hover1{
+	display: flex;
+	margin-left: 450px;
+	margin-right: 100px;
+	padding-top: 70px;
+	color: #01b6ff;
+	z-index: 3;
+}
+.hover2{
+	display: flex;
+	padding-top: 70px;
+	color: #01b6ff;
+	z-index: 3;
+}
+#icon1 {
+	margin-right: 25px;
+	font-size: 50px;
+}
+.continentnavigation {
+	display: none;
+}
+.guidenavigation {
+	display: none;
+}
+.hover1:hover .continentnavigation {
+	display: inline-block;
+	position: absolute;
+	top: 190px;
+	color: #ff936a;
+	z-index: 99999;
+	background-color: rgba(255, 255, 255, 0.6);
+}
+.hover2:hover .guidenavigation {
+	display: inline-block;
+	position: absolute;
+	top: 190px;
+	color: #ff936a;
+	z-index: 99999;
+	background-color: rgba(255, 255, 255, 0.6);
+}
+.logo {
+	width: auto;
+	height: 180px;
+	margin-right: 100px;
+	padding-top: 10px;
+}
+
+.hover2:hover #icon1 {
+	color: #ff936a;
+
+}
+.hover2:hover p {
+	color: #ff936a;
+
+}
+.hover1:hover #icon1 {
+	color: #ff936a;
+
+}
+.hover1:hover p {
+	color: #ff936a;
+
+}
+.guidenavigation li {
+	font-size: 46px;
+	list-style: none;
+}
+.continentnavigation li {
+	font-size: 46px;
+	list-style: none;
+}
+li {
+	font-family: 'Ubuntu';
+}
+
+footer {
+	background-color: #01b6ff;
+	height: 50px;
+	width: 100vw;
+	margin-top: 8px;
+}
+.footertxt {
+	font-size: 50px;
+	padding-left: 100px;
+	font-family: fantasy;
+}
+
+@media screen and (min-width: 480px) {
+	.mobileheader {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.deskheader {
+		display: none;
+	}
+	.mobileheader {
+		margin-left: 0;
+		width: 50vw;
+display: flex;
+flex-direction: column;
+align-content: center;
+  }	
+  .hover1 {
+	margin-left: 0;
+	width: 10vw;
+  }
+  .hover2 {
+	margin-left: 0;
+	width: 10vw;
+	padding: 0;
+  }
+  .hover1:hover .continentnavigation {
+	display: block;
+	position: absolute;
+	left: 50vw;
+}
+.continentnavigation li {
+	font-size: 2em;
+	list-style: none;
+	display: block;
+    width: 20vw;
+    height: 5vh;
+    line-height: 5vh;
+    text-align: center;
+}
+.hover2:hover .guidenavigation {
+	display: block;
+	position: absolute;
+	left: 50vw;
+}
+.guidenavigation li {
+	font-size: 2em;
+	list-style: none;
+	display: block;
+    width: 20vw;
+    height: 5vh;
+    line-height: 5vh;
+    text-align: center;
+}
+footer {
+	background-color: #01b6ff;
+	height: 15vh;
+	padding-top: 5vh;
+	margin-top: -5vh;
+}
+.footertxt {
+	font-size: 2em;
+	padding-left: 0;
+	font-family: fantasy;
+}
+}
